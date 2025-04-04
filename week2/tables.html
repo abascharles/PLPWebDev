@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Tables</h1>
+    </header>
+    <main>
+      <table border="1">
+        <!-- table caption - describes the table-->
+        <caption>
+          Employee Data
+        </caption>
+
+        <!-- table head -->
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Country</th>
+          </tr>
+        </thead>
+
+        <!-- table body -->
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>25</td>
+            <td>USA</td>
+          </tr>
+          <tr>
+            <td>Jane</td>
+            <td>30</td>
+            <td>Canada</td>
+          </tr>
+
+          <!-- merging cells -->
+          <!-- colums -->
+          <tr>
+            <td colspan="2">Merged Column</td>
+          </tr>
+          <!-- Rows -->
+          <tr>
+            <td rowspan="2">Merged Row</td>
+            <td>Data 1</td>
+          </tr>
+          <tr>
+            <td>Data 2</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <footer></footer>
+  </body>
+</html>
