@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment</title>
+  </head>
+  <body>
+    <header>
+      <h1>Advanced HTML5 Elements and Forms</h1>
+    </header>
+
+    <main>
+      <!-- Ordered list with roman numerals -->
+      <h2>Fruits</h2>
+      <ol type="I">
+        <li>Apples</li>
+        <li>Banana</li>
+        <li>Oranges</li>
+      </ol>
+
+      <!-- External image from pexels.com -->
+      <h2>Tokyo Image</h2>
+      <img
+        src="https://images.pexels.com/photos/30429425/pexels-photo-30429425.jpeg"
+        alt="Tokyo at night"
+        width="300"
+        height=""
+      />
+
+      <!-- Table of 5 contacts with; name, address, mobile and emails -->
+      <h2>Table</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Adress</th>
+            <th>Mobile</th>
+            <th>Emails</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Jane Doe</td>
+            <td>123 Tokyo Street, Tokyo, Japan</td>
+            <td>+81 90-1234-5678</td>
+            <td>jane.doe@example.com</td>
+          </tr>
+          <tr>
+            <td>John Smith</td>
+            <td>456 London Ave, London, UK</td>
+            <td>+44 7700 900123</td>
+            <td>john.smith@example.co.uk</td>
+          </tr>
+          <tr>
+            <td>Mary Kim</td>
+            <td>789 Nairobi Road, Nairobi, Kenya</td>
+            <td>+254 712 345678</td>
+            <td>mary.kim@example.ke</td>
+          </tr>
+          <tr>
+            <td>Ali Khan</td>
+            <td>101 Lahore Blvd, Lahore, Pakistan</td>
+            <td>+92 300 1234567</td>
+            <td>ali.khan@example.pk</td>
+          </tr>
+          <tr>
+            <td>Linda Garcia</td>
+            <td>202 Mexico City Lane, Mexico City, Mexico</td>
+            <td>+52 55 1234 5678</td>
+            <td>linda.garcia@example.mx</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <!-- Multimedia -->
+      <audio controls>
+        <source
+          src="https://www.w3schools.com/html/horse.mp3"
+          type="audio/mpeg"
+        />
+        Your browser does not support the audio element.
+      </audio>
+    </main>
+
+    <video controls>
+      <source
+        src="https://www.w3schools.com/html/mov_bbb.mp4"
+        type="video/mp4"
+      />
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Registration form -->
+    <h2>Registration form</h2>
+    <form action="">
+      <label for="name">Name: </label>
+      <input type="text" name="name" placeholder="Enter your name" />
+      <br />
+      <br />
+      <label for="email">Email: <span>*</span></label>
+      <input
+        type="email"
+        name="email"
+        placeholder="Enter Your email"
+        required
+      />
+      <br />
+      <br />
+      <label for="password">password: <span>*</span></label>
+      <input
+        type="password"
+        name="password"
+        placeholder="Enter Your password"
+        required
+      />
+      <br />
+      <br />
+      <label for="date" name="date">Date:</label>
+      <input type="date" />
+      <br />
+      <br />
+      <h3>Country</h3>
+      <label for="Country">Choose your country</label>
+      <select name="country" id="country">
+        <option value="">--Please choose an option--</option>
+        <option value="kenya">Kenya</option>
+        <option value="uganda">Uganda</option>
+        <option value="usa">United States</option>
+        <option value="germany">Germany</option>
+      </select>
+      <h3>Choose your sex</h3>
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male</label><br />
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label><br />
+      <input type="radio" id="other" name="gender" value="other" />
+      <label for="other">Other</label>
+
+      <h3>What are your hobbies?</h3>
+      <input type="checkbox" id="reading" name="hobby" value="reading" />
+      <label for="reading">Reading</label><br />
+
+      <input type="checkbox" id="music" name="hobby" value="music" />
+      <label for="music">Listening to Music</label><br />
+
+      <input type="checkbox" id="travel" name="hobby" value="travel" />
+      <label for="travel">Traveling</label><br />
+
+      <button type="submit" id="submit">Submit</button>
+    </form>
+
+    <footer>
+      <h4>Adios</h4>
+    </footer>
+  </body>
+  s
+</html>
