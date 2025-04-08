@@ -35,3 +35,52 @@ nav {
   padding: 0 50px;
   height: 80px;
 }
+/* Changing the text color of the name link */
+
+nav .left a {
+  color: var(--text-color);
+  font-size: 22px;
+  font-weight: 600;
+}
+/* Changing text color and adding margin on right side links */
+nav .right a {
+  color: var(--text-color);
+  margin: 0 10px;
+}
+/* making the email button call to action */
+nav .right a:last-child {
+  color: var(--background-color);
+  background-color: var(--text-color);
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+/* Adding space netween icons and text */
+nav .right a span {
+  margin-left: 5px;
+}
+
+/* Adding resposnsiveness
+All the stylings in here will only be applied on 600px going down*/
+@media (max-width: 600px) {
+  /* NavBar */
+
+  /* Changing the padding on the nav bar */
+  nav {
+    padding: 0 20px;
+  }
+  /* Increasing the font size of our icons */
+  nav .right a {
+    font-size: 22px;
+  }
+  /*Reseting the email button to be consistent*/
+  nav .right a:last-child {
+    color: var(--text-color);
+    background-color: var(--background-color);
+    padding: 0;
+  }
+  /* Making the text stay hidden*/
+  nav .right a span {
+    display: none;
+  }
+}
