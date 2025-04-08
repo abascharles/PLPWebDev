@@ -171,6 +171,7 @@ nav .right a span {
   flex-wrap: wrap;
   gap: 25px;
   margin-top: 30px;
+  margin-bottom: 50px;
 }
 .projects-section .card-container .card {
   width: 325px;
