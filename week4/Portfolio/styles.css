@@ -214,6 +214,21 @@ nav .right a span {
   color: var(--text-color);
   border: 2px solid var(--text-color);
 }
+
+/* SECTION 4: Contact */
+.contact-section {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+.contact-section h2 {
+  font-size: 35px;
+}
+
+.contact-section .group {
+  display: flex;
+  gap: 50px;
+}
+
 /* Adding resposnsiveness */
 @media (max-width: 850px) {
   /* SECTION 1: Hero*/
