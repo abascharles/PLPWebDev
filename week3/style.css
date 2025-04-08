@@ -1,0 +1,22 @@
+body {
+  background-color: black;
+}
+
+h1 {
+  color: #3498db;
+  background-color: #f1c40f;
+}
+p {
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  /* Opacity */
+  background-color: rgba(55, 214, 55, 0.7);
+}
+/* Spacing with paddinga an margin */
+h2 {
+  color: aliceblue;
+  padding: 20px;
+  margin: 15px;
+}
