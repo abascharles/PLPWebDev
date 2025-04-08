@@ -18,6 +18,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--background-color);
+  max-width: 1400px;
 }
 
 /* Chnaging link color and removing underline */
@@ -278,6 +279,11 @@ nav .right a span {
   .headshot .headshot img {
     width: 300px;
   }
+
+  /* SECTION 4: Contact*/
+  .contact-section .group {
+    flex-direction: column;
+  }
 }
 /* All the stylings in here will only be applied on 600px going down*/
 @media (max-width: 600px) {
@@ -315,5 +321,15 @@ nav .right a span {
   .skills-section {
     padding: 0 20px;
     font-size: 16px;
+  }
+
+  /* SECTION 4: Projects*/
+  .projects-section {
+    padding: 0 20px;
+  }
+
+  /* SECTION 4: Contact*/
+  .contact-section .group {
+    padding: 0 20px;
   }
 }
