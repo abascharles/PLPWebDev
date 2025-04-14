@@ -6,7 +6,7 @@ function greet(name) {
 
 console.log(greet("Eddy"));
 
-//Function expression = assigning a cunction to a variable
+//Function expression = assigning a function to a variable
 
 const add = function (a, b) {
   return a + b;
@@ -26,3 +26,17 @@ const calculate = (a, b) => {
 };
 
 console.log(calculate(3, 4));
+
+//Anonymous Function - Function without a name often used in callbacks
+
+const holla = function (name) {
+  return `Hello ${name}`;
+};
+
+console.log(holla("Abas"));
+
+// As a callback
+setTimeout(function () {
+  console.log("This runs after 2 seconds");
+}),
+  10000;
