@@ -7,4 +7,10 @@ let numImplicit = "42" * 1;
 
 console.log(num);
 
-//Falsy Values
+//Falsy Values in JS
+//- false
+//- 0
+//- " " (Empty String)
+//- null
+//- undefined
+//- NaN (Not a Number)
