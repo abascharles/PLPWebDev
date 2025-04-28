@@ -18,8 +18,19 @@ do {
   num -= 2;
 } while (num > 0);
 
-//For ...of loop
+//For ...of loop -  Most common in arrays
 const fruits = ["apple", "banana", "cherry"];
 for (let fruit of fruits) {
   console.log(fruits);
+}
+
+//For ...in loop Most Common in Objects
+const person = {
+  name: "John",
+  age: 30,
+  city: "New York",
+};
+
+for (let key in person) {
+  console.log(`${key}: ${person[key]}`); // key: value
 }
