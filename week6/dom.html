@@ -2,8 +2,39 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Modifyng DOM</title>
+    <title>JavaScript DOM Example</title>
   </head>
-  <body></body>
+  <body>
+    <h1 id="mainTitle">Main Title</h1>
+    <img
+      id="mainImage"
+      src="https://cdn.photographylife.com/wp-content/uploads/2014/06/Nikon-D810-Image-Sample-6.jpg"
+      alt="Main Image"
+      width="700"
+      height="550"
+    />
+
+    <div class="info">Info paragraph 1</div>
+    <div class="info">Info paragraph 2</div>
+
+    <a id="mainLink" href="https://example.com">Visit Example</a>
+
+    <script>
+      const title = document.getElementById("mainTitle");
+      const image = document.getElementById("mainImage");
+      const paragraphs = document.getElementsByClassName("info");
+      const link = document.getElementById("mainLink");
+
+      //   Modifying DOM Elements
+
+      // 1. Change Content
+      title.textContent = "Updated Title from JavaScript";
+
+      // 2. Change Arrtributes
+      image.setAttribute(
+        "src",
+        "https://thaka.bing.com/th/id/OIF.IpKm5XX5DtoT3g2hQsSttQ?cb=iwc1&rs=1&pid=ImgDetMain.jpg"
+      );
+    </script>
+  </body>
 </html>
