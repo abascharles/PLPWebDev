@@ -1,0 +1,60 @@
+/* Reset all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic page styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0a0a0a;
+  color: #ffffff;
+}
+
+/* Navigation styling */
+.navbar {
+  width: 100%;
+  padding: 25px 0;
+}
+
+/* Center the navigation items */
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* Space between nav items */
+}
+
+.navbar ul li {
+  list-style: none;
+}
+
+.navbar ul li a {
+  color: #ffffff;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Contact button styling */
+.contact-btn {
+  background-color: #0a0a0a;
+  border: 1px solid #1e293b;
+  border-radius: 5px;
+  margin-left: 10px; /* Space between nav items and button */
+}
+
+.contact-btn a {
+  color: #ffffff;
+  padding: 20px 30px; /* More padding for button appearance */
+  text-decoration: none;
+  font-size: 20px;
+  display: inline-block;
+}
+
+/* Optional hover effect */
+.contact-btn:hover {
+  background-color: #1e293b;
+  transition: background-color 0.3s;
+}
