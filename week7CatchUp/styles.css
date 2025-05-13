@@ -1,0 +1,14 @@
+/*Flex box  in Action*/
+
+body {
+  font-family: Arial, serif;
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+h1 {
+  text-align: center;
+}
+.container {
+  display: flex;
+}
