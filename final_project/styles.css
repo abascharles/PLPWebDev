@@ -1,3 +1,10 @@
+/* Define color variables at the root level */
+:root {
+  --bg-primary: #0a0a0a;
+  --text-primary: #ffffff;
+  --accent-color: #1e293b;
+}
+
 /* Reset all elements */
 * {
   margin: 0;
@@ -8,9 +15,11 @@
 /* Basic page styling */
 body {
   font-family: Arial, sans-serif;
-  background-color: #0a0a0a;
-  color: #ffffff;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
 }
+
+/* Nav bar styling */
 
 /* Navigation styling */
 .navbar {
@@ -21,8 +30,8 @@ body {
 /* Center the navigation items */
 .navbar ul {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; /* Center the items vertically */
   gap: 15px; /* Space between nav items */
 }
 
@@ -31,30 +40,70 @@ body {
 }
 
 .navbar ul li a {
-  color: #ffffff;
-  padding: 20px;
+  color: var(--text-primary);
+  padding: 20px; /* Padding for clickable area */
+  border-radius: 5px; /* Rounded corners */
   text-decoration: none;
   font-size: 20px;
 }
 
 /* Contact button styling */
 .contact-btn {
-  background-color: #0a0a0a;
-  border: 1px solid #1e293b;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--accent-color);
   border-radius: 5px;
   margin-left: 10px; /* Space between nav items and button */
 }
 
 .contact-btn a {
-  color: #ffffff;
+  color: var(--text-primary);
   padding: 20px 30px; /* More padding for button appearance */
   text-decoration: none;
   font-size: 20px;
   display: inline-block;
 }
 
-/* Optional hover effect */
+/* Optional hover effect  -- add later using js*/
 .contact-btn:hover {
-  background-color: #1e293b;
+  background-color: var(--accent-color);
   transition: background-color 0.3s;
+}
+
+/* Hero section  */
+.hero-section {
+  padding: 100px 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.basic-info h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.basic-info h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.projects-btn {
+  color: var(--text-primary);
+  margin-top: 20px;
+  padding: 15px 30px;
+  border: 1px solid var(--accent-color);
+  border-radius: 5px;
+}
+
+.projects-btn a {
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--bg-primary);
+}
+
+.profile-image img {
+  width: 250px; /* Set your preferred width */
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover; /* Maintains aspect ratio but fills the container*/
 }
