@@ -123,47 +123,23 @@ body {
   justify-content: center;
 }
 
-.about-me {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 100px;
-}
-.about-text h1 {
-  font-size: 20px;
-  margin-bottom: 30px;
-}
-.about-text p {
-  font-size: 17px;
-  margin-bottom: 100px;
-}
-
-.version-control {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 110px;
-}
-.version-text h1 {
-  font-size: 20px;
-  margin-bottom: 30px;
-}
-.version-text p {
-  font-size: 17px;
-  margin-bottom: 100px;
-}
-
+.about-me,
+.version-control,
 .ai-Driven {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 90px;
+  gap: 100px;
+  margin-bottom: 50px;
 }
-.ai-text h1 {
+
+/* Common text styling */
+.content-text h1 {
   font-size: 20px;
   margin-bottom: 30px;
 }
-.ai-text p {
+
+.content-text p {
   font-size: 17px;
   margin-bottom: 100px;
 }
