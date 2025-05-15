@@ -13,8 +13,11 @@
 }
 
 /* Basic page styling */
+/* Basic page styling */
 body {
-  font-family: Arial, sans-serif;
+  font-family: __Inter_d65c78, __Inter_Fallback_d65c78, ui-sans-serif, system-ui,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
   background-color: var(--bg-primary);
   color: var(--text-primary);
 }
@@ -75,8 +78,9 @@ body {
   padding: 80px 100px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 200px;
 }
 
 .basic-info h2 {
@@ -110,6 +114,79 @@ body {
   object-fit: cover; /* Maintains aspect ratio but fills the container*/
 }
 
+/* About setion */
+.about {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 100px;
+}
+.about-text h1 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.about-text p {
+  font-size: 17px;
+  margin-bottom: 100px;
+}
+
+.version-control {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 110px;
+}
+.version-text h1 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.version-text p {
+  font-size: 17px;
+  margin-bottom: 100px;
+}
+
+.ai-Driven {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 90px;
+}
+.ai-text h1 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.ai-text p {
+  font-size: 17px;
+  margin-bottom: 100px;
+}
+
+/* Icon styling for all sections */
+.about-icon,
+.version-icon,
+.ai-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+.about-icon i,
+.version-icon i,
+.ai-icon i {
+  font-size: 70px;
+  color: var(--accent-color);
+}
+
 /* Responsiveness */
 
 /* Nav bar*/
@@ -134,13 +211,17 @@ body {
 /* Hero section */
 @media (max-width: 600px) {
   .hero-section {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     padding: 10px 80px;
   }
   .basic-info {
     text-align: center;
     font-size: 16px;
+    margin: 20px;
+  }
+  .profile-image {
+    margin-bottom: 20px;
   }
   .projects-btn {
     margin-top: 5px;
