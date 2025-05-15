@@ -30,6 +30,7 @@ body {
 /* Center the navigation items */
 .navbar ul {
   display: flex;
+  flex-direction: row;
   justify-content: center; /* Center the items horizontally */
   align-items: center; /* Center the items vertically */
   gap: 15px; /* Space between nav items */
@@ -71,8 +72,9 @@ body {
 
 /* Hero section  */
 .hero-section {
-  padding: 100px 150px;
+  padding: 80px 100px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -106,4 +108,46 @@ body {
   height: 250px;
   border-radius: 50%;
   object-fit: cover; /* Maintains aspect ratio but fills the container*/
+}
+
+/* Responsiveness */
+
+/* Nav bar*/
+@media (max-width: 600px) {
+  .navbar ul {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+  }
+  .navbar ul li {
+    margin-bottom: 5px; /* Space between items */
+  }
+  .navbar ul li a {
+    padding: 10px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+  .contact-btn a {
+    padding: 10px 20px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Hero section */
+@media (max-width: 600px) {
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 80px;
+  }
+  .basic-info {
+    text-align: center;
+    font-size: 16px;
+  }
+  .projects-btn {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+  }
+  .projects-btn a {
+    font-size: 14px;
+  }
 }
