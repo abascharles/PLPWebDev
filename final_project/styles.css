@@ -125,7 +125,7 @@ body {
 
 .about-me,
 .version-control,
-.ai-Driven {
+.ai-driven {
   display: flex;
   flex-direction: row;
   justify-content: center;
