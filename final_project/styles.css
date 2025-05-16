@@ -319,6 +319,27 @@ img:hover {
   font-size: 14px;
 }
 
+/* Teck Stack section */
+.stack h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+.stack-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.stack-card {
+  border-radius: 7px;
+  width: 400px;
+  height: 300px;
+  background-color: rgb(32, 32, 32);
+  display: flex;
+  flex-direction: column;
+}
+
 /* Responsiveness */
 
 /* Nav bar*/
