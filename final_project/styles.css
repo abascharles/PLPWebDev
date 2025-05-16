@@ -193,6 +193,132 @@ body::-webkit-scrollbar {
   color: var(--accent-color);
 }
 
+/* Projects Section */
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.projects h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  border: solid 1px var(--accent-color);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 550px;
+  background-color: rgba(30, 41, 59, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card .container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.project-card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #e2e8f0;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.project-card .image {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  border-radius: 7px;
+}
+
+.project-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 7px;
+  transition: transform 0.3s ease;
+}
+
+.project-card img:hover {
+  transform: scale(1.05);
+}
+.container {
+  overflow: hidden;
+  border-radius: same-as-image; /* Match your image's border radius */
+}
+
+img {
+  transition: transform 0.3s ease;
+  /* Keep your existing border-radius here */
+}
+
+img:hover {
+  transform: scale(1.05);
+  /* The border-radius should now be preserved */
+}
+.card-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.card-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.try-btn {
+  background-color: var(--accent-color);
+}
+
+.github-btn {
+  background-color: transparent;
+  width: 20px;
+}
+
+.card-btn a {
+  text-decoration: none;
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 14px;
+}
+
 /* Responsiveness */
 
 /* Nav bar*/
@@ -268,5 +394,22 @@ body::-webkit-scrollbar {
   .version-icon,
   .ai-icon {
     margin-bottom: 15px;
+  }
+}
+
+/* Responsive styles for project cards */
+@media (max-width: 600px) {
+  .project-card {
+    margin-left: 0;
+    width: 90%;
+  }
+
+  .project-card .image {
+    height: 180px;
+  }
+
+  .card-buttons {
+    flex-direction: column;
+    align-items: stretch;
   }
 }
