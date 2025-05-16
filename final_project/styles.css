@@ -84,7 +84,7 @@ body::-webkit-scrollbar {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 200px;
+  gap: 350px;
 }
 
 .basic-info h2 {

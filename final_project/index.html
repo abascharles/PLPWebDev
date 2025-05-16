@@ -13,14 +13,14 @@
   <body>
     <header>
       <!-- navigation bar -->
-      <nav class="navbar">
+      <nav id="navbar" class="navbar">
         <div class="navdiv">
           <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="#navbar">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Tech Stack</a></li>
-            <li><a href="#" class="contact-btn">Contact</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#tech-stack">Tech Stack</a></li>
+            <li><a href="#contact" class="contact-btn">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -28,7 +28,7 @@
 
     <main>
       <!-- Hero Section -->
-      <div class="hero-section">
+      <div id="hero" class="hero-section">
         <div class="basic-info">
           <h2>Hi👋 there i'm Abas, a Software Developer</h2>
           <h1>
@@ -36,7 +36,7 @@
             using MERN stack
           </h1>
           <button class="projects-btn">
-            <a href="/projects"
+            <a href="#projects"
               ><i class="fa-brands fa-telegram"></i>Projects</a
             >
           </button>
@@ -48,7 +48,7 @@
 
       <!-- About section -->
 
-      <div class="about">
+      <div id="about" class="about">
         <div class="about-content">
           <div class="about-me">
             <div class="about-text content-text">
@@ -100,7 +100,7 @@
         </div>
       </div>
       <!-- projects section -->
-      <div class="projects">
+      <div id="projects" class="projects">
         <h1>Projects</h1>
         <div class="projects-container">
           <div class="project-card">
@@ -119,10 +119,18 @@
               </div>
               <div class="card-buttons">
                 <button class="card-btn try-btn">
-                  <a href="#">Try it <i class="fa-solid fa-arrow-right"></i></a>
+                  <a
+                    href="https://github.com/abascharles/CLIMS-JAVA-FX"
+                    target="_blank"
+                    >Try it <i class="fa-solid fa-arrow-right"></i
+                  ></a>
                 </button>
                 <button class="card-btn github-btn">
-                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                  <a
+                    href="https://github.com/abascharles/CLIMS-JAVA-FX"
+                    target="_blank"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
                 </button>
               </div>
             </div>
@@ -140,10 +148,18 @@
               </div>
               <div class="card-buttons">
                 <button class="card-btn try-btn">
-                  <a href="#">Try it <i class="fa-solid fa-arrow-right"></i></a>
+                  <a
+                    href="https://github.com/abascharles/zeesweetbloom"
+                    target="_blank"
+                    >Try it <i class="fa-solid fa-arrow-right"></i
+                  ></a>
                 </button>
                 <button class="card-btn github-btn">
-                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                  <a
+                    href="https://github.com/abascharles/zeesweetbloom"
+                    target="_blank"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
                 </button>
               </div>
             </div>
@@ -152,6 +168,7 @@
       </div>
 
       <!-- techstack section -->
+      <div id="stack" class="stack"></div>
 
       <!-- Contact section -->
     </main>
