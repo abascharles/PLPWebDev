@@ -439,6 +439,14 @@ img:hover {
 
 /* Footer Section */
 .footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-icons i {
+  font-size: 25px;
 }
 
 .footer-text p {
