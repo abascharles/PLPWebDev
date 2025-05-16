@@ -37,7 +37,7 @@
           </h1>
           <button class="projects-btn">
             <a href="#projects"
-              ><i class="fa-brands fa-telegram"></i>Projects</a
+              ><i class="fa-solid fa-paper-plane"> </i> Projects</a
             >
           </button>
         </div>
@@ -169,7 +169,7 @@
 
       <!-- techstack section -->
       <div id="tech-stack" class="stack">
-        <h1>Tech Stack <i class="fa-solid fa-layer-group"></i></h1>
+        <h1>Tech Stack </i></h1>
         <div class="stack-container">
           <div class="stack-card front-end">
             <div class="stack-icon">
@@ -190,6 +190,7 @@
               <i class="fa-brands fa-github"></i>
               <i class="fa-brands fa-npm"></i>
               <div class="stack-text">
+                <!-- Will add these using js -->
                 <h2>Back-End</h2>
               </div>
             </div>
@@ -200,11 +201,50 @@
       <!-- Contact section -->
 
       <div class="contact">
-        <h1>Contact me</h1>
+        <h1 id="contact">Contact</h1>
+        <p>Feel free to reach out to me via email or the contact form below. I'm always excited to connect and collaborate!</p>
+        <p><a href="mailto:abascharlesbenard@gmail.com">abascharlesbenard@gmail.com</a></p>
+        <div class="contact-container">
+          <form class="contact-form">
+            <div class="form-group">
+            
+              <input type="text" id="name" name="name" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+             
+              <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+           
+              <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message </i></button>
+          </form>
+        </div>
       </div>
     </main>
 
-    <footer></footer>
+    <footer>
+      <div class="footer-icons">
+      <a href="https://twitter.com/username" target="_blank" aria-label="X (Twitter)">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+      <a href="https://linkedin.com/in/username" target="_blank" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+      <a href="https://github.com/abascharles" target="_blank" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
+
+      <div class="footer-text">
+        <p>Connect with me on social media</p>
+      </div>
+
+      <div class="footer-copyright">
+        <p>&copy; 2023 Abas Charles. All rights reserved.</p>
+      </div>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
